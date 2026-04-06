@@ -49,17 +49,31 @@
 <section class="card">
     <h2>Gallery 📸</h2>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
+
         <img src="CERTIFICATE_matlab.jpeg" onclick="openImage(this.src)">
         <img src="Certificate_page-0001.jpg" onclick="openImage(this.src)">
         <img src="Coursera 5XXQUR7JWVM2_page-0001.jpg" onclick="openImage(this.src)">
+        <img src="cert4.jpg" onclick="openImage(this.src)">
+
+        <img src="cert5.jpg" onclick="openImage(this.src)">
+        <img src="cert6.jpg" onclick="openImage(this.src)">
+        <img src="cert7.jpg" onclick="openImage(this.src)">
+        <img src="cert8.jpg" onclick="openImage(this.src)">
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="prevPage()">⬅ Prev</button>
+        <button onclick="nextPage()">Next ➡</button>
     </div>
 </section>
 
-<!-- Popup Viewer -->
+<!-- POPUP VIEW -->
 <div id="popup" onclick="closeImage()">
     <img id="popup-img">
 </div>
+
 
 <section class="card">
     <h2>Contact 📞</h2>
