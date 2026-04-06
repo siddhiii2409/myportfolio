@@ -48,13 +48,18 @@
 
 <section class="card">
     <h2>Gallery 📸</h2>
+
     <div class="gallery">
-        <img src="CERTIFICATE_matlab.jpeg">
-        <img src="Certificate_page-0001.jpg">
-        <img src="Coursera 5XXQUR7JWVM2_page-0001.jpg
-">
+        <img src="assets/certificates/matlab.jpg" onclick="openImage(this.src)">
+        <img src="assets/certificates/yuva_ai.jpg" onclick="openImage(this.src)">
+        <img src="assets/certificates/ace.jpg" onclick="openImage(this.src)">
     </div>
 </section>
+
+<!-- Popup Viewer -->
+<div id="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
 
 <section class="card">
     <h2>Contact 📞</h2>
