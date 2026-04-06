@@ -70,3 +70,41 @@ body {
 .dark .card {
     background: #1e1e1e;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* POPUP FULL VIEW */
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
