@@ -3,15 +3,12 @@
 <head>
     <title>Siddhi Portfolio</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav id="navbar">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -21,72 +18,55 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- HEADER -->
 <header class="glass">
-    <h1>Siddhi Bulbule</h1>
+    <h1 class="typing"></h1>
     <p>Engineering Student • Tech Enthusiast • Aspiring Model</p>
     <button onclick="toggleMode()">🌙</button>
 </header>
 
-<!-- HOME -->
-<section id="home" class="card">
-    <img src="WhatsApp Image 2026-04-06 at 5.25.21 PM.jpeg" class="profile">
+<section id="home" class="card reveal">
+    <img src="assets/images/profile.jpg" class="profile">
     <h2>Welcome ✨</h2>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="card">
+<section id="about" class="card reveal">
     <h2>About Me</h2>
     <p>
-    I am a first-year B.Tech Computer Science student at MIT Vishwaprayag University, Solapur. I enjoy problem-solving, especially in calculus, and I am passionate about technology and creativity.
-
-    Along with academics, I love traveling and modeling, which help me grow confidently and creatively.
-
-    My goal is to work in a reputed company in New York and become an independent and successful woman.
+    I am a first-year B.Tech Computer Science student at MIT Vishwaprayag University, Solapur. I enjoy calculus, problem-solving, and creative growth through modeling and travel.
     </p>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements" class="card">
+<section id="achievements" class="card reveal">
     <h2>Achievements 🏆</h2>
     <ul>
         <li>96.5 percentile in MHT-CET</li>
         <li>1st Rank in 1st Semester</li>
-        <li>AI4A - Yuva AI Certification</li>
+        <li>AI4A Certification</li>
         <li>MATLAB Programming - Coursera</li>
         <li>ACE Course Completion</li>
     </ul>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="card">
+<section id="projects" class="card reveal">
     <h2>Projects 💻</h2>
-
-    <p><strong>AI Mental Health Project:</strong> Helping students (13–25) understand mental health using AI.</p>
-
-    <p><strong>Parthenium Growth Analysis:</strong> Using calculus to study plant spread and environmental impact.</p>
+    <p><strong>AI Mental Health Project:</strong> Helping students understand mental health using AI.</p>
+    <p><strong>Parthenium Analysis:</strong> Calculus-based environmental study.</p>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="card">
+<section id="gallery" class="card reveal">
     <h2>Gallery 📸</h2>
-
     <div class="gallery" id="gallery-images">
-        <img src="CERTIFICATE_matlab.jpeg" onclick="openImage(this.src)">
-        <img src="Certificate_page-0001.jpg" onclick="openImage(this.src)">
-        <img src="Coursera 5XXQUR7JWVM2_page-0001.jpg" onclick="openImage(this.src)">
+        <img src="assets/certificates/CERTIFICATE_matlab.jpeg" onclick="openImage(this.src)">
+        <img src="assets/certificates/Certificate_page-0001.jpg" onclick="openImage(this.src)">
+        <img src="assets/certificates/Coursera 5XXQUR7JWVM2_page-0001.jpg" onclick="openImage(this.src)">
     </div>
-
-    
 </section>
 
-<!-- POPUP -->
 <div id="popup" onclick="closeImage()">
     <img id="popup-img">
 </div>
 
-<!-- CONTACT -->
-<section id="contact" class="card">
+<section id="contact" class="card reveal">
     <h2>Contact 📞</h2>
     <p>Email: siddhibulbule2409@gmail.com</p>
     <p>Phone: +91 9423591184</p>
