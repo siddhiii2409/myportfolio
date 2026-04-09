@@ -3,116 +3,95 @@ body {
     background: linear-gradient(135deg, #fce4ec, #e3f2fd);
     margin: 0;
     text-align: center;
-    transition: 0.4s;
+    padding-top: 70px;
 }
 
-/* Glass Header */
-.glass {
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
 }
 
-/* Cards */
+#navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+#navbar a.active {
+    background: black;
+    color: white;
+}
+
+/* HEADER */
+.glass {
+    padding: 20px;
+}
+
+/* CARD */
 .card {
     background: white;
     margin: 20px;
     padding: 25px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
 }
+
+/* PROFILE */
 .profile {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* Profile Image */
-.profile {
-    width: 140px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Gallery */
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.gallery img {
-    width: 180px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Dark Mode */
-.dark {
-    background: #121212;
-    color: white;
-}
-
-.dark .card {
-    background: #1e1e1e;
-}
+/* GALLERY */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    padding: 20px;
 }
 
 .gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
-    border-radius: 12px;
+    object-fit: contain;
+    background: white;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* POPUP FULL VIEW */
+/* POPUP */
 #popup {
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.9);
-    display: none;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
 }
 
 #popup img {
     max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
 }
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;  /* VERY IMPORTANT */
-    background: white;
-    border-radius: 12px;
-    cursor: pointer;
+
+/* BUTTONS */
+.buttons button {
+    padding: 10px;
+    margin: 5px;
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+    color: white;
 }
