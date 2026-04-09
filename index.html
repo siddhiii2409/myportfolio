@@ -2,23 +2,40 @@
 <html lang="en">
 <head>
     <title>Siddhi Portfolio</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
 <header class="glass">
     <h1>Siddhi Bulbule</h1>
     <p>Engineering Student • Tech Enthusiast • Aspiring Model</p>
     <button onclick="toggleMode()">🌙</button>
 </header>
 
-<section class="card">
-    <img src="WhatsApp Image 2026-04-06 at 5.25.21 PM.jpeg" class="profile">
+<!-- HOME -->
+<section id="home" class="card">
+    <img src="assets/images/profile.jpg" class="profile">
     <h2>Welcome ✨</h2>
 </section>
 
-<section class="card">
+<!-- ABOUT -->
+<section id="about" class="card">
     <h2>About Me</h2>
     <p>
     I am a first-year B.Tech Computer Science student at MIT Vishwaprayag University, Solapur. I enjoy problem-solving, especially in calculus, and I am passionate about technology and creativity.
@@ -29,7 +46,8 @@
     </p>
 </section>
 
-<section class="card">
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="card">
     <h2>Achievements 🏆</h2>
     <ul>
         <li>96.5 percentile in MHT-CET</li>
@@ -40,30 +58,38 @@
     </ul>
 </section>
 
-<section class="card">
+<!-- PROJECTS -->
+<section id="projects" class="card">
     <h2>Projects 💻</h2>
-    <p><strong>AI Mental Health Project:</strong> Helping students (13–25) and parents understand mental health using AI.</p>
-    <p><strong>Parthenium Growth Analysis:</strong> Using calculus to study parthenium spread and environmental impact.</p>
+
+    <p><strong>AI Mental Health Project:</strong> Helping students (13–25) understand mental health using AI.</p>
+
+    <p><strong>Parthenium Growth Analysis:</strong> Using calculus to study plant spread and environmental impact.</p>
 </section>
 
-<section class="card">
+<!-- GALLERY -->
+<section id="gallery" class="card">
     <h2>Gallery 📸</h2>
 
-    <div class="gallery" id="gallery">
+    <div class="gallery" id="gallery-images">
+        <img src="assets/certificates/CERTIFICATE_matlab.jpeg" onclick="openImage(this.src)">
+        <img src="assets/certificates/Certificate_page-0001.jpg" onclick="openImage(this.src)">
+        <img src="assets/certificates/Coursera 5XXQUR7JWVM2_page-0001.jpg" onclick="openImage(this.src)">
+    </div>
 
-        <img src="CERTIFICATE_matlab.jpeg" onclick="openImage(this.src)">
-        <img src="Certificate_page-0001.jpg" onclick="openImage(this.src)">
-        <img src="Coursera 5XXQUR7JWVM2_page-0001.jpg" onclick="openImage(this.src)">
+    <div class="buttons">
+        <button onclick="prevPage()">⬅ Prev</button>
+        <button onclick="nextPage()">Next ➡</button>
     </div>
 </section>
 
-<!-- POPUP VIEW -->
+<!-- POPUP -->
 <div id="popup" onclick="closeImage()">
     <img id="popup-img">
 </div>
 
-
-<section class="card">
+<!-- CONTACT -->
+<section id="contact" class="card">
     <h2>Contact 📞</h2>
     <p>Email: siddhibulbule2409@gmail.com</p>
     <p>Phone: +91 9423591184</p>
